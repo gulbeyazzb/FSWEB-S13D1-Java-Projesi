@@ -6,12 +6,28 @@ public class Main {
         // System.out.println(shouldWakeUp(true,-1));
         // System.out.println(hasTeen(23, 22, 42));
         // System.out.println(isCatPlaying(true,10));
+
+
         Scanner entry = new Scanner(System.in);
+        //System.out.print("first edge: ");
         //double edge1 = entry.nextDouble();
+        //System.out.print("second edge: ");
         //double edge2 = entry.nextDouble();
+       /* if(edge1 || edge2 == -1){
+            System.out.println("edge mustn't negative");
+            edge1 = entry.nextDouble();
+            edge2 = entry.nextDouble();
+        }
+         System.out.println(area(edge1,edge2))
+
+*/
+        System.out.print("radius: ");
         double radius = entry.nextDouble();
-        // System.out.println(area(edge1,edge2));
-        System.out.println(circleArea(radius));
+        if( radius == -1){
+            System.out.println("radius mustn't negative");
+            radius = entry.nextDouble();
+        }
+            System.out.println(circleArea(radius));
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int num) {
