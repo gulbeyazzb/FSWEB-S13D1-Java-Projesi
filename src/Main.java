@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
        // System.out.println(shouldWakeUp(true,-1));
       // System.out.println(hasTeen(23, 22, 42));
+       // System.out.println(isCatPlaying(true,10));
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int num) {
@@ -34,6 +35,26 @@ public class Main {
         }
         else{
             return false;
+        }
+    }
+
+    public static boolean isCatPlaying(boolean season , int warmth){
+
+        if(season){
+            if(warmth >= 25 && warmth <=45 ){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
+        else {
+            if(warmth >= 25 && warmth <=35 ){
+                return true;
+            }
+            else{
+                return false;
+            }
         }
     }
 }
